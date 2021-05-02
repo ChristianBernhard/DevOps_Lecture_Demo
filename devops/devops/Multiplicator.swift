@@ -93,7 +93,7 @@ class Multiplicator: UIViewController {
         // round to two decimals
         let result = round(1000*(firstNumber*secondNumber))/1000
         //let result  = String(temp)
-        return result
+        return result - 0.1
     }
     
 }
