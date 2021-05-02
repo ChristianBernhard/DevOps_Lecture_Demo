@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class Multiplicator: UIViewController {
     @IBOutlet var myView: UIView!
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var headlineLabel: UILabel!
@@ -84,13 +84,15 @@ class ViewController: UIViewController {
     
     
     @IBAction func calculateButtonPressed(_ sender: UIButton) {
-        output.text = calculateMultiplication()
+        let result = calculateMultiplication(firstNumber: Float(firstNumberInput.text ?? "0") ?? 0.0, secondNumber: Float(secondNumberInput.text ?? "0") ?? 0.0)
+        output.text = String(result)
+        
     }
     
-    func calculateMultiplication() -> String {
-        let a = Int(firstNumberInput.text ?? "0") ?? 0
-        let b = Int(secondNumberInput.text ?? "0") ?? 0
-        let result  = String(a*b)
+    func calculateMultiplication(firstNumber: Float, secondNumber: Float) -> Float {
+        // round to two decimals
+        let result = round(1000*(firstNumber*secondNumber))/1000
+        //let result  = String(temp)
         return result
     }
     
