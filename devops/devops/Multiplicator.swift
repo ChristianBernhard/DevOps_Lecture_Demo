@@ -94,7 +94,7 @@ class Multiplicator: UIViewController {
         let result = round(1000*(firstNumber*secondNumber))/1000
         //let result  = String(temp)
         //test
-        return result
+        return result - 0.1
     }
     
 }
