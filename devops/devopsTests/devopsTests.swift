@@ -45,7 +45,6 @@ class devopsTests: XCTestCase {
         XCTAssertTrue(result < 0)
     }
     
-    
     func test_multiplySecondNegativeEqualsNegative() {
         //given
         let firstPositiveNumber: Float = 1
