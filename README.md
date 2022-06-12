@@ -1,1 +1,1 @@
-To demonstrate the seminar paper **Continuous integration server using the example of AppCenter**, this demo project (iOS app) was created.
+To demonstrate the coursework **Continuous integration server using the example of AppCenter** from the lecture **DevOps and Cloud Computing**, this demo project (iOS app) was created.
